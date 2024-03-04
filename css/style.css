@@ -2,25 +2,77 @@
 @import url(./sections/hero.css);
 @import url(./sections/house.css);
 
+/* <---------- fonts ----------> */
+
+@font-face {
+  font-family: "Brutel";
+  src: url(./../assets/brutel/Brutel-Light.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brutel";
+  src: url(./../assets/brutel/Brutel-Bold.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brutel";
+  src: url(./../assets/brutel/Brutel-Black.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Auvant Gothic";
+  src: url(./../assets/century-gothic/GOTHIC.TTF);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Konnect";
+  src: url(./../assets/konnect/KonnectLight.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Konnect";
+  src: url(./../assets/konnect/KonnectRegular.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Konnect";
+  src: url(./../assets/konnect/KonnectBold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-  background-color: #0E1327;
-  width: 1200px;
+  background-color: #fff;
+  width: 1100px;
   margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .unselectable {
   user-select: none;
 }
 
-
 /* <---------- @media ----------> */
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1250px) {
   body {
     width: auto;
     margin: 0 50px;

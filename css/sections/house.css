@@ -7,22 +7,16 @@
 .house-selector {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-evenly;
     align-items: flex-end;
     height: 200px;
 }
 
-/* .house-selector button {
-    background: none;
-    border: none;
-    outline: none;
-} */
-
 .house-selector img {
-    width: calc(80% / 5.25);
+    width: calc(75% / 6);
     height: auto;
     object-fit: contain;
-    opacity: 0.4;
+    opacity: 0.3;
     transition: width 0.35s;
 }
 
@@ -30,14 +24,104 @@
     opacity: 1.0;
 }
 
-.house-selector img.house-selected {
+.house-selector img.house-icon-selected {
     opacity: 1.0;
-    width: calc(80% / 5.25 * 1.25);
+    width: calc(75% / 5.5 * 1.25);
+}
+
+.house-info {
+    position: relative;
+}
+
+.house-info__bg {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    opacity: 0.1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.house-info__bg-name {
+    font-size: 750px;
+    font-family: "Brutel";
+    font-weight: 400;
+    margin: 20px 0 -130px 0;
+    padding: 0;
+}
+
+.house-info__bg-text {
+    font-size: 200px;
+    font-family: "Auvant Gothic";
+    font-weight: 200;
+    margin: 0;
+}
+
+.house-info__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.house-info__name {
+    font-size: 100px;
+    font-family: "Konnect";
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* align-self: flex-end; */
+    margin: 50px 0 0 0;
+    text-align: end;
+}
+
+.house-info__description {
+    width: 600px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 35px;
+    position: absolute;
+    top: 300px;
+}
+
+.color-photon {
+    color: #AC0000;
+}
+
+.color-rise {
+    color: #4266B4;
+}
+
+.color-incubator {
+    color: #FF9100;
+}
+
+.color-symposia {
+    color: #FFC700;
+}
+
+.color-eureka {
+    color: #5B2382;
 }
 
 
 /* <---------- @media ----------> */
 
-@media only screen and (max-width: 1300px) {
-  
+@media only screen and (max-width: 1250px) {
+    .house-info__bg-name {
+        font-size: 500px;
+        margin-bottom: -80px;
+    }
+
+    .house-info__bg-text {
+        font-size: 125px;
+    }
+
+    .house-info__name {
+        font-size: 65px;
+    }
+
+    .house-info__description {
+        font-size: 20px;
+        top: 200px;
+    }
 }
