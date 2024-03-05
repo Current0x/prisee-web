@@ -47,7 +47,7 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   gap: 30px;
-  margin: auto 30px auto 0;
+  margin: auto 0;
 }
 
 .header__menu a {
@@ -64,7 +64,7 @@ header {
 
 
 
-/* <---------- @media ----------> */
+/* ---------- @media ---------- */
 
 @media only screen and (max-width: 1250px) {
 

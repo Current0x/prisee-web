@@ -7,13 +7,14 @@
 .house-selector {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: center;
+    gap: 50px;
     align-items: flex-end;
     height: 200px;
 }
 
 .house-selector img {
-    width: calc(75% / 6);
+    width: calc(75% / 5);
     height: auto;
     object-fit: contain;
     opacity: 0.3;
@@ -26,11 +27,14 @@
 
 .house-selector img.house-icon-selected {
     opacity: 1.0;
-    width: calc(75% / 5.5 * 1.25);
+    width: calc(75% / 5 * 1.5);
 }
 
 .house-info {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .house-info__bg {
@@ -44,14 +48,14 @@
 }
 
 .house-info__bg-name {
-    font-size: 750px;
     font-family: "Brutel";
+    font-size: 750px;
     font-weight: 400;
-    margin: 20px 0 -130px 0;
-    padding: 0;
+    margin: 20px -40px -130px -50px;
 }
 
 .house-info__bg-text {
+    position: relative;
     font-size: 200px;
     font-family: "Auvant Gothic";
     font-weight: 200;
@@ -60,17 +64,18 @@
 
 .house-info__main {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: flex-end;
 }
 
 .house-info__name {
+    position: relative;
     font-size: 100px;
     font-family: "Konnect";
     font-weight: 700;
     letter-spacing: 2px;
-    /* align-self: flex-end; */
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     text-align: end;
 }
 
@@ -104,16 +109,29 @@
 }
 
 
-/* <---------- @media ----------> */
+/* ---------- @media ---------- */
 
 @media only screen and (max-width: 1250px) {
+    .house-selector img {
+        width: 100px;
+    }
+
+    .house-selector img.house-icon-selected {
+        width: 150px;
+    }
+
     .house-info__bg-name {
         font-size: 500px;
-        margin-bottom: -80px;
+        margin-bottom: -90px;
     }
 
     .house-info__bg-text {
         font-size: 125px;
+    }
+
+    .house-info {
+        width: 700px;
+        align-self: center;
     }
 
     .house-info__name {
@@ -121,7 +139,7 @@
     }
 
     .house-info__description {
-        font-size: 20px;
+        font-size: 18px;
         top: 200px;
     }
 }

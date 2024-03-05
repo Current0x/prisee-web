@@ -69,12 +69,12 @@ body {
   user-select: none;
 }
 
-/* <---------- @media ----------> */
+/* ---------- @media ---------- */
 
 
 @media only screen and (max-width: 1250px) {
   body {
     width: auto;
-    margin: 0 50px;
+    margin: 0 40px;
   }
 }

@@ -27,8 +27,10 @@
 
 
 
-/* <---------- @media ----------> */
+/* ---------- @media ---------- */
 
 @media only screen and (max-width: 1250px) {
-  
-  }
+    .hero {
+        padding: 0 30px;
+    }
+}
